@@ -1,0 +1,79 @@
+<html ng-app="myApp">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="script.js"></script>
+
+</head>
+<body>
+<div>
+	<div ng-controller="myCtrl">
+	
+	
+	
+		<div class="container">
+		
+		<h2> Submit the details of the employee</h2>
+		
+			<form ng-submit="submitEmp()">
+				<div>
+					<div>Name : <input type="text" ng-model="empname"/></div>
+					<div><span></span></div>
+				</div>
+				<div>
+					<div>City : <input type="text" ng-model="empcity"/></div>
+					<div><span></span></div>
+				</div>
+				<div>
+					<div>Mobile Number : <input type="text" ng-model="empmob"/></div>
+					<div><span></span></div>
+				</div>
+				
+				<h4>Address details of the employee</h4>
+				<div>
+					<div>add1 : <input type="text" ng-model="empadd1"/></div>
+					<div><span></span></div>
+				</div>
+				<div>
+					<div>add2: <input type="text" ng-model="empadd2"/></div>
+					<div><span></span></div>
+				</div>
+				<div>
+					<div>zip code: <input type="number" ng-model="zip"/></div>
+					<div><span></span></div>
+				</div>
+				
+				<input type="submit" value="Submit"/>
+				
+			</form>
+		</div>
+	</div>
+	<div  ng-controller="getid">
+	<h2>Find the Employee by ID</h2>
+		<div>
+		<div class="getcontainer">
+				<form>
+					<div>
+						<div>Id: <input type="text" ng-model="getid"/></div>
+						<div><span></span></div>
+					</div>
+
+					<input type="submit" value="Search"  ng-click="submitReq()"/>
+					
+				<form>
+			</div>
+			
+		</div>
+		<div>
+			<div>Id : {{user.id}}</div>
+			<div>name : {{user.name}}</div>
+			<div>mobile : {{user.mobile}}</div>
+			<div><b>Address</b></div>
+			<div>add1 : {{user.address.add1}}</div>
+			<div>add2 : {{user.address.add2}}</div>
+			<div>zipcode : {{user.address.zipcode.toString()}}</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
