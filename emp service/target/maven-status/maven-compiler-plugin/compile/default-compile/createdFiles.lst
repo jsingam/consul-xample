@@ -1,0 +1,10 @@
+com\singam\Service\EmployeeServiceImp.class
+com\singam\Configuration\Config.class
+com\singam\Repository\EmployeeRepositoryImp.class
+com\singam\Model\Employee.class
+com\singam\Controller\EmployeeControllerImp.class
+com\singam\Controller\EmployeeController.class
+com\singam\Model\Address.class
+com\singam\Application.class
+com\singam\Repository\EmployeeRepository.class
+com\singam\Service\EmployeeService.class
